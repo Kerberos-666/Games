@@ -672,7 +672,7 @@ int main()
         if(food.second==0)food.second++;
         if(food.first==height-1)food.first--;
         if(food.second==width-1)food.second--;
-        if(plane[food.first][food.second]!=char(219))break;
+        if(plane[food.first][food.second]!=char(219) && plane[food.first][food.second]!=char(178))break;
     }
     SetPlane();
     DrawPlane();
@@ -721,7 +721,7 @@ int main()
                 if(food.second==0)food.second++;
                 if(food.first==height-1)food.first--;
                 if(food.second==width-1)food.second--;
-                if(plane[food.first][food.second]!=char(219))
+                if(plane[food.first][food.second]!=char(219) && plane[food.first][food.second]!=char(178))
                     break;
             }
             eaten=0;
